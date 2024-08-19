@@ -1,0 +1,319 @@
+body{
+    background-color: white;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1em;
+    font-size: 16px;
+    margin:0;
+}
+.container{
+    margin:auto;
+    width:80%;
+    overflow: hidden;
+}
+#navbar{
+    background-color: #1F2833;
+    min-height:60px;
+    /*IMPORTANT*/
+    position: sticky;
+    top: 0; /* Add this to make the navbar sticky at the top */
+    z-index: 1; /* This ensures it stays above other content */
+}
+#navbar .container{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#navbar .container a:hover{
+    color: #66FCF1 ;
+}
+#navbar .container a{
+    text-decoration: none;
+    color:white;
+    padding-left:0;
+    padding-right:100px;
+}
+#navbar .container .zero a{
+    padding-right: 400px;
+}
+#navbar .container .zero a:hover{
+    color: white;
+}
+#navbar .container img{
+    transition: transform 0.3s ease;
+}
+#navbar .container img:hover{
+    transform: scale(1.2);
+}
+.home{
+    background-color: #1F2833;
+    color: white;
+    min-height:250px; /*..*/
+}
+.home .container{
+    padding-top:30px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+.home .container .right .img2{
+    display: block;
+}
+.home .container .right .img2 img{
+    padding-bottom:0;
+    margin-bottom: 0;
+}
+.home .container .left{
+    display:block;
+    width:50%;
+    padding-bottom:20px;
+}
+.home .container .left h3{
+    color:white;
+    font-size:35px;
+    padding-top:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+}
+.home .container .left h1{
+    color: #66FCF1;
+    font-size: 55px;
+    padding-top:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+}
+.home .container .left .wd {
+    display:flex;
+    flex-wrap: wrap;
+}
+.home .container .left .wd h3{
+    color: white;
+    font-size:35px;
+    text-shadow: #66FCF1;   
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+    padding-right:20px;
+}
+
+.home .container .left .wd h2{
+    color: white;
+    font-size: 45px;
+    padding-left:15px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.03em;
+    -webkit-box-reflect:below 30px linear-gradient(transparent, #251638);
+    line-height: 0.8em;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    100%{
+        color:white;
+        text-shadow: 0 0 10px #42f2e6,
+        0 0 20px #42f2e6,
+        0 0 30px #42f2e6,
+        0 0 40px #42f2e6,
+        0 0 80px #42f2e6,
+        0 0 160px #42f2e6;
+    }
+}
+#about-me .container{
+    display: block;
+    padding-top: 20px;
+}
+#about-me .container .hi h2{
+    font-size: 22px;
+    color: #338982;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    font-weight:900;
+    letter-spacing: 0.01em;
+    padding-bottom: 10px;
+}
+#about-me .container .hi2 h3{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+#about-me .container .hi3 p{
+    color: black;
+    line-height: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size:15.8px;
+}
+#about-me .container .hi3 h3{
+    color: #338982;
+    font-weight:900;
+    line-height: 2em;
+}
+#about-me .container button[type="submit"]{
+    background-color: #251638;
+    color: white;
+    font-size: 20px;
+    padding:8px;
+    border-radius: 10px;
+}
+#about-me .container button:hover{
+    background-color: #2a3644;
+}
+.showcase{
+    background-color:#1F2833;
+    margin-top:40px;
+    min-height: 200px;
+    padding-top:15px;
+    padding-bottom:30px;
+}
+.showcase .container {
+    display:block;
+}
+.showcase .container .one h1{
+    font-size:25px;
+    color: #66FCF1;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom:20px;
+    border-bottom: #66FCF1 2px solid;
+    -webkit-box-reflect:right 30px linear-gradient(transparent, #251638);
+    line-height: 0.8em;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate{
+    100%{
+        color:white;
+        text-shadow: 0 0 10px #42f2e6,
+        0 0 20px #182e2c,
+        0 0 30px #2e5350,
+        0 0 40px #316f6a,
+        0 0 80px #42f2e6,
+        0 0 160px #42f2e6;
+    }
+}
+.showcase .container .two h1{
+    font-size:29px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.04em;
+    padding-left:40px;
+}
+.showcase .container .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    column-gap: 28px;
+    row-gap: 38px;
+}
+.showcase .container .flex .box{
+    width:200px;
+    height:200px;
+    margin:10px;
+    box-shadow: -1px 0 8px white;
+    border-radius: 30px;
+    background-color: #2a3644;
+}
+.showcase .container .flex .box img{
+    padding-top:30px;
+    padding-left:40px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+.showcase .container .flex .box h2{
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    padding-bottom:8px
+}
+.showcase .container .flex .box:hover{
+    background-color: rgb(18, 11, 11);
+    opacity: 0.4;
+    box-shadow: -1px 0 8px rgb(133, 133, 133);
+}
+.container .buttons .form-group{
+    margin:40px 0;
+}
+.container .buttons .form-group button[type=submit]{
+    background-color:#2a3644;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding:10px;
+    width:100%;
+    border-radius: 10px;
+}
+.container .buttons .form-group button:hover{
+    background-color: #251638;
+    color: white;
+}
+.main-foot .container h3{
+    margin-top:60px;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(61, 60, 60);
+}
+@media (max-width:1440px){
+    .home .container .right .img2 img{
+        padding-bottom:0;
+        margin-bottom: 0;
+        height:auto;
+        padding-left:0;
+    }
+    #navbar .container a{
+        text-decoration: none;
+        color:white;
+        padding-left:0;
+        padding-right:60px;
+    }
+    #navbar .container .zero a{
+        padding-right: 250px;
+    }
+
+}
+@media (max-width:1024px){
+    .home .container .right .img2 img{
+        padding-bottom:0;
+        margin-bottom: 0;
+        height:auto;
+        padding-left:0;
+    }
+    #navbar .container a{
+        text-decoration: none;
+        color:white;
+        padding-left:0;
+        padding-right:40px;
+    }
+    #navbar .container .zero a{
+        padding-right: 150px;
+    }
+    #about-me .container .hi3{
+        line-height: 2em;
+    }
+}
+@media (max-width:768px){
+    #navbar .container a{
+        text-decoration: none;
+        color:white;
+        padding-left:0;
+        padding-right:20px;
+    }
+    #navbar .container .zero a{
+        padding-right: 50px;
+    }
+}
+
+
+
+
+
+
